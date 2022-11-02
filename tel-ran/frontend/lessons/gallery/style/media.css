@@ -1,0 +1,14 @@
+/*
+(<)max-width: 992px - вступает в силу
+(>)min-widch: 768px - вступает в силу
+*/
+@media (max-width: 992px) {
+    .item {
+        width: calc(100% / 3 - 20px);
+    }
+}
+@media (max-width: 480px) {
+    .item {
+        width: calc(100% / 1 - 20px);
+    }
+}

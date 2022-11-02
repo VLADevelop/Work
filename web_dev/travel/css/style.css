@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* наследование*/
+
+
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+.al-reg {
+    font-family: 'Aleo-regular';
+}
+
+.header-top {
+    background-image: url(../images/image-header.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 264px;
+    padding-bottom: 132px;
+}
+
+.header-titel {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header-subtitle {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 6.82px;
+    color: #FFFFFF;
+
+}
+
+.haeder-form {
+    width: 653px;
+    margin: 48px auto 0 auto;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.haeder-form input {
+    padding: 18px 113px 18px 113px;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    color: #999999;
+    width: 500px;
+    border: none;
+
+}
+
+.haeder-form input::placeholder {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    color: #999999;
+}
+
+.header-btn {
+    display: block;
+    width: 153px;
+    background: #5474FD url(../images/search.svg) no-repeat right 16px center;
+    border: 2px solid #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-right: 16px;
+}
+
+.header-link {
+    width: 108px;
+    height: 48px;
+    display: block;
+    position: relative;
+    margin: 108px auto 0 auto;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.header-link::after {
+    content: "";
+    /* всегда добавлять это правило*/
+    position: absolute;
+    width: 17px;
+    height: 11px;
+    background: url(../images/arrow-douwn.svg) no-repeat center;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-bottom {
+    background: #5474FD;
+    padding: 32px 0 31px 0;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 186px;
+    display: block;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 43px;
+}
+
+.menu a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}

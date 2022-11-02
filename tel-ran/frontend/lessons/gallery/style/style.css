@@ -1,0 +1,28 @@
+main {
+    display: flex;
+    flex-wrap: wrap; /*правило расположения элементов. все в одну */
+    justify-content: center;
+}
+.item {
+    width: calc(100% / 2 - 20px);
+    height: 200px;
+    margin: 10px;
+    background-color: coral;
+}
+.item-1 {
+    background-image: url(../imeges/prague.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*justify-content - поцизиционировать элементы по горизонтали
+    align-items - поцизиционировать элементы по вертикали
+
+    flex-direction: column. 
+
+    vw, vh - view width, view height
+
+    background: url, cover. 
+    100%, px
+    1. cover - масштабировать элемент по ширине. 
+    2. contain - масштабировать элемент по высоте.*/

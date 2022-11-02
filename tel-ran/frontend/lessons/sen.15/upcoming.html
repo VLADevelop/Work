@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upcoming events</title>
+
+    <style>
+      .timeline {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+      }
+      .timeline__line {
+        height: 1px;
+        background: lightgray;
+        width: 80%;
+      }
+      .timeline__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .lesson {
+        background: blue;
+        width: 70%;
+        height: 40px;
+        position: absolute;
+        left: 25%;
+      }
+      .lesson--930h {
+        /* ??? */
+        top: calc(100% / 17 * 1);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h3>Upcoming</h3>
+
+      <div class="timeline">
+        <div class="lesson lesson--930h"></div>
+
+        <div class="timeline__item">
+          <div class="timeline__time">09:00</div>
+          <div class="timeline__line"></div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__time">10:00</div>
+          <div class="timeline__line"></div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__time">11:00</div>
+          <div class="timeline__line"></div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__time">12:00</div>
+          <div class="timeline__line"></div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__time">13:00</div>
+          <div class="timeline__line"></div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__time">14:00</div>
+          <div class="timeline__line"></div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__time">15:00</div>
+          <div class="timeline__line"></div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__time">16:00</div>
+          <div class="timeline__line"></div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__time">17:00</div>
+          <div class="timeline__line"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

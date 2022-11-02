@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.menu
+{
+    display: flex;
+    width: 100%; height: 80px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    margin-top: -110px;
+    background: rgba(35, 35, 35);
+    align-items: center;
+    
+}
+body
+{
+    background: rgba(35, 35, 35);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
+}
+.list{
+
+    display: flex;
+    align-items: center;
+
+}
+li{
+    margin: 20px;
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
+}
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: orange;
+    border-radius: 30px;
+    padding: 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 50px;
+    margin-right: 40px;
+
+}
+.li__link {
+    text-decoration: none;
+    color: white;
+
+}
+.li__link_color {
+    color: orange;
+
+}
+
+.name {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+a {
+    color: orange;
+}
+h1 {
+    font-size: 3rem;
+    color: white;
+}
+.desc {
+    color: white;
+    font-size: 1.5rem;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    
+
+
+}
+.block {
+    display: flex;
+    width: 350px;
+    height: 100px;
+    background: rgb(73,73,73);
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.sinf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exper {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 100px;
+    align-items: center;
+
+}
+.block--colored {
+    background: orange;
+}
+.logo {
+    font-size: 4rem;
+}
+
+.num {
+    font-size: 2rem; 
+    font-weight: 600;
+}
+.text {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.num--colored {
+    color: orange;
+}
+
+.text--colored {
+    color: white;
+}
+.whoiam {
+    display: flex;
+    margin-top: 200px;
+    width: 90%;
+
+}
+
+mark {
+    background: rgb(73,73,73);
+    color: orange;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    padding: 5px 20px 5px 20px;
+}
+h2 {
+    color: white;
+    margin-top: -2px;
+    font-size: 3rem;
+    font-weight: 500;
+
+}
+p {
+    color: white;
+    margin-top: -20px;
+    font-weight: 200;
+
+}
+.about {
+    margin-top: 40px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: black;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+.footer__block {
+    width: 250px;
+}
+.block__name {
+    color: orange;
+
+}
+.block__desc {
+    color: white;
+}
+div > p {
+    color: gray;
+}
+.whoiam__text {
+    color: white;
+
+}
+.myskills {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.myskills__section {
+    width: 40%;
+    margin-left: 5%;
+}
+.myskills__icons {
+    display: grid;
+    grid-template-columns: repeat(6, 70px);
+    grid-template-rows: 70px 70px;
+    gap: 20px;
+    margin-right: 5%;
+
+}
+.icon__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(73,73,73);
+    border-radius: 10px;
+    font-size: 3rem;
+
+}
+.submenu__link {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+
+}
+.submenu__link:hover,
+.submenu__link-active {
+    color: black;
+    background: orange;
+    border-radius: 5px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+
+}
+.myworks__header,
+.myworks {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+menu {
+    display: flex;
+
+    
+
+}
+.myworks__main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 25px;
+    height: 80vh;
+    overflow-y: scroll;
+
+}
+.feedback__image,
+.main__images {
+    margin: 0;
+
+
+
+}
+.myworks__main::-webkit-scrollbar {
+    display: none;
+}
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 150px;
+
+}
+.testimonials__feedback {
+    display: flex;
+    gap: 15px;
+
+}
+footer {
+    margin-top: 150px;
+    
+}

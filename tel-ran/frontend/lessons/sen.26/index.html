@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messenger</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+  </head>
+
+  <body>
+    <aside class="sidebar">
+      <div>
+        <div class="sidebar__logo logo">
+          <i class="las la-cube logo__icon"></i>
+          <span class="logo__text">Shark</span>
+        </div>
+        <nav class="sidebar__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link"
+                ><i class="las la-th-large nav__icon"></i>Dashboard</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"
+                ><i class="lar la-chart-bar nav__icon"></i>Statistic</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"
+                ><i class="lab la-rocketchat nav__icon"></i>Support</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--active"
+                ><i class="las la-envelope nav__icon"></i>Inbox</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"
+                ><i class="las la-rocket nav__icon"></i>Goals</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"
+                ><i class="las la-link nav__icon"></i>Links</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <fieldset class="sidebar__proj-field proj-field">
+        <legend class="proj-field__title">Projects</legend>
+
+        <div class="proj-field__item">
+          <input
+            type="checkbox"
+            id="Callipso"
+            name="Callipso"
+            class="proj-field__checkbox"
+          />
+          <label class="proj-field__label proj-field__label--red" for="Callipso"
+            >Callipso</label
+          >
+        </div>
+
+        <div class="proj-field__item">
+          <input
+            type="checkbox"
+            id="bmw"
+            name="bmw"
+            class="proj-field__checkbox"
+          />
+          <label class="proj-field__label proj-field__label--blue" for="bmw"
+            >BMW bank</label
+          >
+        </div>
+
+        <div class="proj-field__item">
+          <input
+            type="checkbox"
+            id="Unicorn-app"
+            name="Unicorn-app"
+            class="proj-field__checkbox"
+          />
+          <label
+            class="proj-field__label proj-field__label--violet"
+            for="Unicorn-app"
+            >Unicorn app</label
+          >
+        </div>
+
+        <div class="proj-field__item">
+          <input
+            type="checkbox"
+            id="Salt"
+            name="Salt"
+            class="proj-field__checkbox"
+          />
+          <label class="proj-field__label proj-field__label--green" for="Salt"
+            >Salt</label
+          >
+        </div>
+
+        <input type="button" value="Show more" class="proj-field__more-btn" />
+      </fieldset>
+    </aside>
+
+    <main class="main">
+      <div class="inbox">
+        <div class="inbox__head">
+          <h2 class="inbox__title">Inbox</h2>
+          <button class="btn">+</button>
+        </div>
+        <div class="inbox__toggle-wrap">
+          <button class="inbox__toggle-btn inbox__toggle-btn--active">
+            General
+          </button>
+          <button class="inbox__toggle-btn">Total</button>
+        </div>
+
+        <div class="inbox__list">
+          <a class="inbox__chat-link active" href="#">
+            <div class="inbox__contact contact contact--unread active">
+              <div class="contact__user-img-wrap">
+                <div class="contact__user-online"></div>
+                <img
+                  class="contact__user-img"
+                  src="https://via.placeholder.com/40x40"
+                  alt="User avatar"
+                />
+              </div>
+              <div class="contact__text-wrap">
+                <div class="contact__name">Michael B.</div>
+                <div class="contact__grade">Project manager</div>
+                <div class="contact__last-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                  ullam?
+                </div>
+              </div>
+              <div class="contact__unread-num">5</div>
+            </div>
+          </a>
+
+          <a class="inbox__chat-link" href="#">
+            <div class="inbox__contact contact contact--unread">
+              <div class="contact__user-img-wrap">
+                <img
+                  class="contact__user-img"
+                  src="https://via.placeholder.com/40x40"
+                  alt="User avatar"
+                />
+              </div>
+              <div class="contact__text-wrap">
+                <div class="contact__name">Michael B.</div>
+                <div class="contact__grade">Project manager</div>
+                <div class="contact__last-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                  ullam?
+                </div>
+              </div>
+              <div class="contact__unread-num">2</div>
+            </div>
+          </a>
+
+          <a class="inbox__chat-link" href="#">
+            <div class="inbox__contact contact">
+              <div class="contact__user-img-wrap">
+                <div class="contact__user-online"></div>
+                <img
+                  class="contact__user-img"
+                  src="https://via.placeholder.com/40x40"
+                  alt="User avatar"
+                />
+              </div>
+              <div class="contact__text-wrap">
+                <div class="contact__name">Michael B.</div>
+                <div class="contact__grade">Project manager</div>
+                <div class="contact__last-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                  ullam?
+                </div>
+              </div>
+              <div class="contact__unread-num"></div>
+            </div>
+          </a>
+
+          <a class="inbox__chat-link" href="#">
+            <div class="inbox__contact contact">
+              <div class="contact__user-img-wrap">
+                <img
+                  class="contact__user-img"
+                  src="https://via.placeholder.com/40x40"
+                  alt="User avatar"
+                />
+              </div>
+              <div class="contact__text-wrap">
+                <div class="contact__name">Michael B.</div>
+                <div class="contact__grade">Project manager</div>
+                <div class="contact__last-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                  ullam?
+                </div>
+              </div>
+              <div class="contact__unread-num"></div>
+            </div>
+          </a>
+
+          <a class="inbox__chat-link" href="#">
+            <div class="inbox__contact contact">
+              <div class="contact__user-img-wrap">
+                <div class="contact__user-online"></div>
+                <img
+                  class="contact__user-img"
+                  src="https://via.placeholder.com/40x40"
+                  alt="User avatar"
+                />
+              </div>
+              <div class="contact__text-wrap">
+                <div class="contact__name">Michael B.</div>
+                <div class="contact__grade">Project manager</div>
+                <div class="contact__last-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                  ullam?
+                </div>
+              </div>
+              <div class="contact__unread-num"></div>
+            </div>
+          </a>
+
+          <a class="inbox__chat-link" href="#">
+            <div class="inbox__contact contact">
+              <div class="contact__user-img-wrap">
+                <img
+                  class="contact__user-img"
+                  src="https://via.placeholder.com/40x40"
+                  alt="User avatar"
+                />
+              </div>
+              <div class="contact__text-wrap">
+                <div class="contact__name">Michael B.</div>
+                <div class="contact__grade">Project manager</div>
+                <div class="contact__last-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                  ullam?
+                </div>
+              </div>
+              <div class="contact__unread-num"></div>
+            </div>
+          </a>
+
+          <a class="inbox__chat-link" href="#">
+            <div class="inbox__contact contact">
+              <div class="contact__user-img-wrap">
+                <div class="contact__user-online"></div>
+                <img
+                  class="contact__user-img"
+                  src="https://via.placeholder.com/40x40"
+                  alt="User avatar"
+                />
+              </div>
+              <div class="contact__text-wrap">
+                <div class="contact__name">Michael B.</div>
+                <div class="contact__grade">Project manager</div>
+                <div class="contact__last-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                  ullam?
+                </div>
+              </div>
+              <div class="contact__unread-num"></div>
+            </div>
+          </a>
+
+          <a class="inbox__chat-link" href="#">
+            <div class="inbox__contact contact">
+              <div class="contact__user-img-wrap">
+                <img
+                  class="contact__user-img"
+                  src="https://via.placeholder.com/40x40"
+                  alt="User avatar"
+                />
+              </div>
+              <div class="contact__text-wrap">
+                <div class="contact__name">Michael B.</div>
+                <div class="contact__grade">Project manager</div>
+                <div class="contact__last-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                  ullam?
+                </div>
+              </div>
+              <div class="contact__unread-num"></div>
+            </div>
+          </a>
+
+          <a class="inbox__chat-link" href="#">
+            <div class="inbox__contact contact">
+              <div class="contact__user-img-wrap">
+                <div class="contact__user-online"></div>
+                <img
+                  class="contact__user-img"
+                  src="https://via.placeholder.com/40x40"
+                  alt="User avatar"
+                />
+              </div>
+              <div class="contact__text-wrap">
+                <div class="contact__name">Michael B.</div>
+                <div class="contact__grade">Project manager</div>
+                <div class="contact__last-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                  ullam?
+                </div>
+              </div>
+              <div class="contact__unread-num"></div>
+            </div>
+          </a>
+
+          <a class="inbox__chat-link" href="#">
+            <div class="inbox__contact contact">
+              <div class="contact__user-img-wrap">
+                <img
+                  class="contact__user-img"
+                  src="https://via.placeholder.com/40x40"
+                  alt="User avatar"
+                />
+              </div>
+              <div class="contact__text-wrap">
+                <div class="contact__name">Michael B.</div>
+                <div class="contact__grade">Project manager</div>
+                <div class="contact__last-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                  ullam?
+                </div>
+              </div>
+              <div class="contact__unread-num"></div>
+            </div>
+          </a>
+
+          <a class="inbox__chat-link" href="#">
+            <div class="inbox__contact contact">
+              <div class="contact__user-img-wrap">
+                <div class="contact__user-online"></div>
+                <img
+                  class="contact__user-img"
+                  src="https://via.placeholder.com/40x40"
+                  alt="User avatar"
+                />
+              </div>
+              <div class="contact__text-wrap">
+                <div class="contact__name">Michael B.</div>
+                <div class="contact__grade">Project manager</div>
+                <div class="contact__last-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                  ullam?
+                </div>
+              </div>
+              <div class="contact__unread-num"></div>
+            </div>
+          </a>
+
+          <a class="inbox__chat-link" href="#">
+            <div class="inbox__contact contact">
+              <div class="contact__user-img-wrap">
+                <img
+                  class="contact__user-img"
+                  src="https://via.placeholder.com/40x40"
+                  alt="User avatar"
+                />
+              </div>
+              <div class="contact__text-wrap">
+                <div class="contact__name">Michael B.</div>
+                <div class="contact__grade">Project manager</div>
+                <div class="contact__last-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
+                  ullam?
+                </div>
+              </div>
+              <div class="contact__unread-num"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="chat">
+        <div class="chat__info">
+          <div class="chat__person">
+            <div class="chat__person--wrap">
+              <img
+                class="chat__user-img"
+                src="https://via.placeholder.com/40x40"
+                alt="User avatar"
+              />
+              <div class="contact__user-online"></div>
+            </div>
+
+            <div class="chat__info-text">
+              <div class="contact__name">Michael B.</div>
+              <div class="chat__online">Online</div>
+            </div>
+          </div>
+
+          <div class="chat__utils">
+            <div class="search">
+              <i class="las la-search search__icon"></i>
+              <input
+                class="search__input"
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search..."
+              />
+            </div>
+
+            <button class="btn" type="button">
+              <i class="las la-microphone"></i>
+            </button>
+            <button class="btn" type="button">
+              <i class="las la-video"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="messages">
+          <div class="messages__date-group">
+            <div class="messages__date">July 25, Tuesday</div>
+
+            <div class="is-out">
+              <div class="messages__item">Hello!</div>
+              <div class="messages__item">Some audio for 16 seconds</div>
+              <div class="messages__item">
+                Okay, thank you very much for the speed
+              </div>
+            </div>
+
+            <div class="is-in">
+              <div class="messages__item">Hi</div>
+              <div class="messages__item">Some audio for 8 seconds</div>
+              <div class="messages__item">Catch Brief.doc 148kb</div>
+              <div class="messages__item">Hi Some audio for 8 seconds</div>
+              <div class="messages__item">Catch Brief.doc 148kb</div>
+            </div>
+
+            <div class="is-out">
+              <div class="messages__item">Hello!</div>
+              <div class="messages__item">Some audio for 16 seconds</div>
+              <div class="messages__item">Okay, thank you very much for the speed</div>
+            </div>
+
+            <div class="is-in">
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+            </div>
+          </div>
+
+          <div class="messages__date-group">
+            <div class="messages__date">July 24, Monday</div>
+
+            <div class="is-out">
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+            </div>
+
+
+            <div class="is-out">
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+            </div>
+
+            <div class="is-in">
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+              <div class="messages__item">Lorem ipsum dolor sit amet.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat__bottom">
+          <form
+            action="#"
+            method="post"
+            enctype="multipart/form-data"
+            class="chat__form"
+          >
+            <input
+              class="chat__input-text"
+              type="text"
+              placeholder="Write a message..."
+            />
+
+            <div>
+              <button
+                class="btn"
+                type="file"
+                enctype="multipart/form-data"
+                method="post"
+              >
+                <i class="las la-photo-video"></i>
+              </button>
+              <button class="btn" type="button">
+                <i class="las la-microphone"></i>
+              </button>
+              <button type="submit" class="btn">
+                <i class="las la-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="side-btns">
+        <button class="btn" type="button">
+          <i class="las la-ellipsis-h"></i>
+        </button>
+
+        <div class="side-btns-wrap">
+          <button class="btn" type="button">
+            <i class="las la-exclamation-circle"></i>
+          </button>
+          <button class="btn" type="button">
+            <i class="las la-volume-mute"></i>
+          </button>
+          <button class="btn" type="button">
+            <i class="las la-trash"></i>
+          </button>
+        </div>
+
+        
+
+      </div>
+    </main>
+  </body>
+</html>

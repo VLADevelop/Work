@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.menu
+{
+    margin-top: 20px;
+    display: flex;
+    width: 100%; height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+body
+{
+    background: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
+}
+.button {
+  margin-right: 20px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+
+.li__link{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.li__link:hover, 
+.li__link-active {
+  color: white;
+}
+
+.link__underscore {
+  margin-top: 5px;
+  height: 5px;
+  width: 40%;
+  background: transparent;
+  border-radius: 5px;
+}
+.menu__item:hover div,
+.link__underscore-active {
+  background: orange;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: orange;
+    border-radius: 30px;
+    padding: 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+.li__link_color {
+    color: orange;
+
+}
+
+.name {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+a {
+    color: orange;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.desc {
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.block {
+  display: flex;
+  width: 150px;
+  height: 300px;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+}
+.sinf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 100px;
+  align-items: center;
+
+}
+.block--colored {
+  background: transparent;
+}
+.logo {
+  font-size: 4rem;
+}
+
+.num {
+  font-size: 2rem; 
+  font-weight: 600;
+}
+.text {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.num--colored {
+  color: orange;
+}
+
+.text--colored {
+  color: white;
+}
+.whoiam {
+  display: flex;
+  margin-top: 200px;
+  width: 90%;
+
+}
+
+.images {
+  margin: 0;
+}
+
+.velues {
+  position: absolute;
+  z-index: 5;
+  top: 250px;
+  
+}
+.self {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.images > img {
+  width: 800px;
+  border-radius: 15px;
+  
+}
+
